@@ -1,0 +1,16 @@
+# customer
+
+spring:
+  application:
+    name: matrix-cusomter-local
+
+server:
+  port: 8082
+  
+client:
+  request:
+    interval: 5000
+    
+order:
+  dispatcher:
+    url: http://localhost:8081/order/{itemName}
