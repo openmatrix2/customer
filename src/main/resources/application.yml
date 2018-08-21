@@ -1,7 +1,8 @@
 spring:
   application:
     name: matrix-customer
-
+  server:
+    port: 9001
 server:
   port: 9001
   
@@ -11,4 +12,4 @@ client:
     
 order:
   dispatcher:
-    url: matrix-order-dispatcher:9002/order/{itemName}
+    url: http://matrix-order-dispatcher:9002/order/{itemName}

@@ -1,9 +1,10 @@
 spring:
   application:
-    name: matrix-cusomter-local
-
+    name: matrix-customer
+  server:
+    port: 9001
 server:
-  port: 8082
+  port: 9001
   
 client:
   request:
@@ -11,4 +12,4 @@ client:
     
 order:
   dispatcher:
-    url: http://localhost:8081/order/{itemName}
+    url: http://matrix-order-dispatcher:9002/order/{itemName}
